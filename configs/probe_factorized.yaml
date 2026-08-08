@@ -1,0 +1,19 @@
+stage: linear_probe
+dataset: BNCI2014_001
+inherit: main.yaml
+encoder:
+  frozen: true
+  weights: factorized_envelope
+head:
+  type: linear
+  classes: 4
+probe:
+  chance_accuracy: 25.0
+  expected_accuracy: 41.8
+  expected_deviation: 2.3
+optimizer:
+  name: adamw
+  learning_rate: 0.0005
+  weight_decay: 0.05
+  epochs: 100
+  batch_size: 64

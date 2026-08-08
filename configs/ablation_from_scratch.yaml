@@ -1,0 +1,17 @@
+stage: finetune
+dataset: BNCI2014_001
+inherit: main.yaml
+initialization:
+  encoder: random
+  decoder: absent
+ablation:
+  pretraining: false
+  expected_accuracy: 58.9
+  expected_deviation: 1.6
+  expected_kappa: 0.45
+optimizer:
+  name: adamw
+  learning_rate: 0.0005
+  weight_decay: 0.05
+  epochs: 100
+  batch_size: 64

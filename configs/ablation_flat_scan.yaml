@@ -1,0 +1,17 @@
+stage: finetune
+dataset: BNCI2014_001
+inherit: main.yaml
+tokenizer:
+  scan: row_major
+  anatomical_clusters: false
+  temporal_patch_samples: 25
+ablation:
+  expected_accuracy: 62.5
+  expected_deviation: 1.5
+  expected_kappa: 0.50
+optimizer:
+  name: adamw
+  learning_rate: 0.0005
+  weight_decay: 0.05
+  epochs: 100
+  batch_size: 64

@@ -1,0 +1,5 @@
+BCI Competition IV 2a | https://www.bbci.de/competition/iv/download/index.html | public competition terms
+BCI Competition IV 2b | https://www.bbci.de/competition/iv/download/index.html | public competition terms
+OpenBMI | https://doi.org/10.5524/100542 | CC BY 4.0
+EEG Motor Movement/Imagery Dataset 1.0.0 | https://physionet.org/content/eegmmidb/1.0.0/ | ODC Attribution 1.0
+SHU Multi-session Dataset version 3 | https://figshare.com/articles/code/shu_dataset/19228725 | CC BY 4.0, archive password requires author contact

@@ -1,0 +1,15 @@
+stage: pretrain
+dataset: harmonized_public_mi
+inherit: pretrain.yaml
+mask:
+  type: random_token
+  cluster_ratio: 0.0
+  band_ratio: 0.0
+  time_ratio: 0.5
+  decoder_dimension: 64
+ablation:
+  expected_accuracy: 62.0
+  expected_deviation: 1.5
+  expected_kappa: 0.49
+  expected_probe_accuracy: 29.1
+  expected_probe_deviation: 2.4

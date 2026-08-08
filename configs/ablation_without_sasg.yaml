@@ -1,0 +1,20 @@
+stage: finetune
+dataset: BNCI2014_001
+inherit: main.yaml
+model:
+  channels: 22
+  classes: 4
+  dimension: 128
+  state_dimension: 128
+  expansion: 2
+  convolution_width: 4
+  blocks: 6
+  clusters: 4
+  dropout: 0.1
+  bidirectional: true
+  descriptor_min_samples: 1000000000
+ablation:
+  subject_descriptor: population_mean
+  expected_accuracy: 60.1
+  expected_deviation: 1.7
+  expected_kappa: 0.47

@@ -1,0 +1,27 @@
+stage: finetune
+dataset: Lee2019_MI
+inherit: main.yaml
+signal:
+  sample_rate: 250
+  source_sample_rate: 1000
+  window_seconds: 4.0
+  stride_seconds: 0.25
+  patch_samples: 25
+model:
+  channels: 62
+  classes: 2
+  dimension: 128
+  state_dimension: 128
+  expansion: 2
+  convolution_width: 4
+  blocks: 6
+  clusters: 4
+  dropout: 0.1
+  bidirectional: true
+  descriptor_min_samples: 64
+protocol:
+  folds: 8
+  target_labels: 0
+results:
+  expected_accuracy: 82.8
+  expected_deviation: 4.8

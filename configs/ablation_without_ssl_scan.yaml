@@ -1,0 +1,18 @@
+stage: finetune
+dataset: BNCI2014_001
+inherit: main.yaml
+initialization:
+  encoder: random
+tokenizer:
+  scan: row_major
+  anatomical_clusters: false
+ablation:
+  expected_accuracy: 56.3
+  expected_deviation: 1.6
+  expected_kappa: 0.42
+  interaction_ratio: 1.01
+optimizer:
+  learning_rate: 0.0005
+  weight_decay: 0.05
+  epochs: 100
+  batch_size: 64
